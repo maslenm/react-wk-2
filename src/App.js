@@ -1,10 +1,9 @@
 import "./App.css";
-import Square from "./components/Square.js";
+import Squares from "./components/Squares.js";
 
 const App = () => (
 	<>
-		<Square colour="red" />
-		<Square colour="red" />
+		<Squares colour="red" />
 	</>
 );
 

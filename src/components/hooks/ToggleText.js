@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 const ToggleText = ({ initial, alternative }) => {
-	const [text, setText] = useState(true);
+	const [isInitial, setText] = useState(true);
 
-	const updateText = () => setText(!text);
+	const updateText = () => setText(!isInitial);
 
 	return (
 		<>
 			<button onClick={updateText}>Toggle</button>
-			{text ? initial : alternative}
-			<p>{text}</p>
+
+			<p>{isInitial ? initial : alternative}</p>
 		</>
 	);
 };

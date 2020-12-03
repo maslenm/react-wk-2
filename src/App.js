@@ -6,6 +6,7 @@ import Button from "./components/Button";
 import Articles from "./news/Articles";
 import Article from "./news/Article";
 import Clicked from "./components/hooks/Clicked";
+import Square from "./components/hooks/Square";
 
 const App = () => (
 	<Router>
@@ -27,6 +28,9 @@ const App = () => (
 		</Route>
 		<Route exact path="/clicked">
 			<Clicked />
+		</Route>
+		<Route exact path="/square">
+			<Square colour="hotpink" />
 		</Route>
 	</Router>
 );

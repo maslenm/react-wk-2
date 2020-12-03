@@ -15,5 +15,3 @@ const ToggleText = ({ initial, alternative }) => {
 };
 
 export default ToggleText;
-
-/* { initial }, { alternative } */

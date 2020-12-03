@@ -9,6 +9,7 @@ import Clicked from "./components/hooks/Clicked";
 import Square from "./components/hooks/Square";
 import ToggleText from "./components/hooks/ToggleText";
 import Counter from "./components/hooks/Counter";
+import StepCounter from "./components/hooks/StepCounter";
 
 const App = () => (
 	<Router>
@@ -39,6 +40,9 @@ const App = () => (
 		</Route>
 		<Route exact path="/counter">
 			<Counter initial={50} max={100} />
+		</Route>
+		<Route exact path="/stepcounter">
+			<StepCounter max={100} step={5} />
 		</Route>
 	</Router>
 );

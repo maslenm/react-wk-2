@@ -5,6 +5,7 @@ import SignUp from "./components/SignUp";
 import Button from "./components/Button";
 import Articles from "./news/Articles";
 import Article from "./news/Article";
+import Clicked from "./components/hooks/Clicked";
 
 const App = () => (
 	<Router>
@@ -23,6 +24,9 @@ const App = () => (
 		</Route>
 		<Route exact path="/button">
 			<Button></Button>
+		</Route>
+		<Route exact path="/clicked">
+			<Clicked />
 		</Route>
 	</Router>
 );

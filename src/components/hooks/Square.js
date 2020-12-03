@@ -5,11 +5,13 @@ const Square = ({ colour }) => {
 
 	const updateBgColour = () => setBgColour(!bgColour);
 
+	const colourState = bgColour ? "green" : colour;
+
 	return (
 		<div
 			onClick={updateBgColour}
 			style={{
-				backgroundColor: bgColour ? "green" : colour,
+				backgroundColor: colourState,
 				height: "200px",
 				width: "200px",
 			}}

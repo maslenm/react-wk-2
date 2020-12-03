@@ -7,6 +7,7 @@ import Articles from "./news/Articles";
 import Article from "./news/Article";
 import Clicked from "./components/hooks/Clicked";
 import Square from "./components/hooks/Square";
+import ToggleText from "./components/hooks/ToggleText";
 
 const App = () => (
 	<Router>
@@ -31,6 +32,9 @@ const App = () => (
 		</Route>
 		<Route exact path="/square">
 			<Square colour="hotpink" />
+		</Route>
+		<Route exact path="/toggletext">
+			<ToggleText initial="Hello" alternative="World" />
 		</Route>
 	</Router>
 );

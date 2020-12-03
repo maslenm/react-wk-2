@@ -8,6 +8,7 @@ import Article from "./news/Article";
 import Clicked from "./components/hooks/Clicked";
 import Square from "./components/hooks/Square";
 import ToggleText from "./components/hooks/ToggleText";
+import Counter from "./components/hooks/Counter";
 
 const App = () => (
 	<Router>
@@ -35,6 +36,9 @@ const App = () => (
 		</Route>
 		<Route exact path="/toggletext">
 			<ToggleText initial="Hello" alternative="World" />
+		</Route>
+		<Route exact path="/counter">
+			<Counter initial={50} max={100} />
 		</Route>
 	</Router>
 );

@@ -10,6 +10,8 @@ import Square from "./components/hooks/Square";
 import ToggleText from "./components/hooks/ToggleText";
 import Counter from "./components/hooks/Counter";
 import StepCounter from "./components/hooks/StepCounter";
+import CatchMeIfYouCan from "./components/hooks/CatchMeIfYouCan";
+import Reduced from "./components/hooks/reducer/Reduced";
 
 const App = () => (
 	<Router>
@@ -43,6 +45,12 @@ const App = () => (
 		</Route>
 		<Route exact path="/stepcounter">
 			<StepCounter max={100} step={5} />
+		</Route>
+		<Route exact path="/catchmeifyoucan">
+			<CatchMeIfYouCan jump={100} />
+		</Route>
+		<Route exact path="/reduced">
+			<Reduced />
 		</Route>
 	</Router>
 );
